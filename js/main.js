@@ -127,7 +127,7 @@ const DAYS = {
         name: 'دمبل رو تک‌دست',
         sets: '۳ ست — ۱۰ تکرار هر دست',
         desc: 'یک دست را روی میز یا صندلی بگذارید، کمر صاف باشد و دمبل را به سمت پهلو بکشید. شانه نباید بالا بیاید.',
-        video: 'videos/How to Perfect Your Dumbbell Row _ Form Check _ Men\'s Health.mp4',
+        video: 'videos/How_to_Perfect_Your_Dumbbell_Row___Form_Check___Men\'s_Health.mp4',
       },
       {
         name: 'پرس سینه دمبل روی زمین',
@@ -139,7 +139,7 @@ const DAYS = {
         name: 'پل باسن',
         sets: '۳ ست — ۱۲ تکرار',
         desc: 'به پشت بخوابید، زانوها خم، کف پا روی زمین. باسن را بالا بیاورید و آرام پایین ببرید.',
-        video: 'videos/Glute Bridge_Iso__Functional_Strength_and_Conditioning_Exercises.mp4',
+        video: 'videos/Glute_Bridge_Iso___Functional___Strength_and_Conditioning_Exercises.mp4',
       },
       {
         name: 'باز کردن دست‌ها در حالت خم سبک',
@@ -244,13 +244,13 @@ const DAYS = {
         name: 'برد داگ',
         sets: '۲ ست — ۸ تکرار هر طرف',
         desc: 'در حالت چهار دست‌وپا، دست و پای مخالف را آرام بالا بیاورید. گردن در امتداد ستون بدن باشد.',
-        video: 'videos/How to do a Bird Dog _ Proper Form & Technique_ NASM.mp4',
+        video: 'videos/How to do a Bird Dog _ Proper Form & Technique _ NASM.mp4',
       },
       {
         name: 'تمرین تعادل پاشنه-پنجه',
         sets: '۲ نوبت — هر بار ۲۰ ثانیه',
         desc: 'یک پا را جلوی پای دیگر بگذارید، مثل راه رفتن روی خط صاف. کنار دیوار بایستید.',
-        video: 'videos/Single_leg_balance_exercise_with_arm_workout__Ohio_State_Medical.mp4',
+        video: 'videos/Single_leg_balance_exercise_with_arm_workout___Ohio_State_Medical.mp4',
       },
     ],
   },
@@ -288,7 +288,7 @@ const DAYS = {
         name: 'گابلت اسکوات با یک دمبل',
         sets: '۳ ست — ۱۰ تکرار',
         desc: 'یک دمبل را نزدیک سینه نگه دارید و اسکوات بزنید. اگر سنگین بود، بدون دمبل انجام دهید.',
-        video: 'videos/How_To_Do_A_DUMBBELL_GOBLET_SQUAT__Exercise_Demonstration_Video.mp4',
+        video: 'videos/How_To_Do_A_DUMBBELL_GOBLET_SQUAT___Exercise_Demonstration_Video.mp4',
       },
       {
         name: 'لانج عقب کوتاه',
@@ -312,7 +312,7 @@ const DAYS = {
         name: 'پشت بازو سبک',
         sets: '۲ ست — ۱۰ تکرار',
         desc: 'کیک‌بک سبک یا فشار دست به دیوار. گردن و شانه‌ها باید آزاد باشند.',
-        video: 'videos/How_To_Seated_Overhead_Dumbbell_Triceps_Extension_French_Press.mp4',
+        video: 'videos/How_To__Seated_Overhead_Dumbbell_Triceps_Extension_French_Press.mp4',
       },
       {
         name: 'چرخش آرام مچ با دمبل سبک',

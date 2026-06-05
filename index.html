@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>برنامه ورزشی</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header">
+  <div class="container">
+    <div class="header-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+        <line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/>
+        <line x1="14" y1="1" x2="14" y2="4"/>
+      </svg>
+    </div>
+    <div>
+      <div class="header-title">برنامه تمرینی</div>
+      <div class="header-sub">هوشمندانه تمرین کن، قوی‌تر بشو</div>
+    </div>
+  </div>
+</header>
+
+<!-- ===== PAGES ===== -->
+
+<!-- HOME: weekly schedule -->
+<main>
+
+  <!-- PAGE: خانه -->
+  <div class="page active" id="home">
+    <div class="container">
+      <div class="page-title">برنامه هفتگی</div>
+      <div class="page-desc">روی هر روز بزن تا تمرین‌های اون روز رو ببینی</div>
+      <!-- week cards -->
+      <div id="week-view"></div>
+      <!-- day detail (hidden until click) -->
+      <div id="day-detail" style="display:none"></div>
+    </div>
+  </div>
+
+  <!-- PAGE: گرم‌کردن -->
+  <div class="page" id="warmup">
+    <div class="container">
+      <div class="page-title">گرم‌کردن</div>
+      <div class="page-desc">قبل از هر جلسه تمرین — حدود ۸ تا ۱۰ دقیقه</div>
+
+      <div class="tip-box" style="margin-bottom:24px">
+        <span class="tip-icon">💡</span>
+        <p>حتی اگر قبل از تمرین دویده‌ای، این گرم‌کردن کوتاه رو حذف نکن. بدنت رو برای کار با دمبل آماده‌تر می‌کنه.</p>
+      </div>
+
+      <div class="warmup-list" id="warmup-list"></div>
+
+      <div class="info-section" style="margin-top:32px">
+        <div class="info-section-title"><span class="icon">🔁</span> روتین روزانه گردن و شانه</div>
+        <div class="info-card">
+          <p>این روتین فقط ۸ تا ۱۰ دقیقه زمان می‌بره و می‌تونه تقریباً هر روز انجام بشه.</p>
+          <ul>
+            <li>جمع کردن آرام چانه — ۲ ست، ۸ تکرار</li>
+            <li>جمع کردن کتف‌ها — ۲ ست، ۱۰ تکرار</li>
+            <li>کشش سینه کنار دیوار — ۲ نوبت، هر طرف ۲۰ ثانیه</li>
+            <li>حرکت دست‌ها روی دیوار — ۲ ست، ۸ تکرار</li>
+            <li>چرخش آرام بالاتنه روی صندلی — ۶ بار هر طرف</li>
+            <li>تنفس آرام با شانه‌های آزاد — ۱ دقیقه</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE: دویدن -->
+  <div class="page" id="running">
+    <div class="container">
+      <div class="page-title">برنامه دویدن</div>
+      <div class="page-desc">دویدن آرام صبحگاهی رو با تمرین قدرتی هماهنگ کن</div>
+
+      <div class="tip-box">
+        <span class="tip-icon">🏃</span>
+        <p>در روزهایی که تمرین دمبل داری، دویدن فقط نقش <strong>گرم‌کردن هوازی</strong> داشته باشه، نه تمرین سنگین.</p>
+      </div>
+
+      <div class="info-section" style="margin-top:24px">
+        <div class="info-section-title"><span class="icon">📋</span> روزهای تمرین با دمبل</div>
+        <div class="info-card">
+          <div class="info-card-title">قبل از تمرین قدرتی <span class="badge">ترتیب مهمه</span></div>
+          <ul>
+            <li>۵ تا ۱۰ دقیقه راه رفتن</li>
+            <li>۱۵ تا ۲۰ دقیقه دویدن بسیار آرام</li>
+            <li>برگشت به خانه و انجام تمرین دمبل</li>
+          </ul>
+          <p style="margin-top:12px">شدت دویدن باید طوری باشه که هنوز بتونی چند جمله کوتاه بگی. اگر نفس خیلی تند شد، سرعت رو کم کن.</p>
+        </div>
+      </div>
+
+      <div class="info-section">
+        <div class="info-section-title"><span class="icon">📅</span> پیشنهاد هفتگی هوازی</div>
+        <div class="info-card">
+          <ul>
+            <li>۳ روز — دویدن آرام همراه با تمرین دمبل</li>
+            <li>۲ روز — پیاده‌روی تند یا دویدن خیلی سبک</li>
+            <li>۱ روز — حرکات کششی، اصلاحی و پیاده‌روی سبک</li>
+            <li>۱ روز — استراحت فعال</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="info-section">
+        <div class="info-section-title"><span class="icon">❤️</span> چرا دویدن مفیده؟</div>
+        <div class="info-card">
+          <p>دویدن آرام صبحگاهی برای سلامت قلب، تنفس، خلق‌وخو، کنترل وزن و شادابی بدن بسیار مفیده. وقتی با تمرین قدرتی هماهنگ بشه، بدن هم پیشرفت می‌کنه هم فرصت کافی برای ریکاوری داره.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAGE: نکات -->
+  <div class="page" id="tips">
+    <div class="container">
+      <div class="page-title">نکات مهم</div>
+      <div class="page-desc">اصول تمرین ایمن و مؤثر</div>
+
+      <div class="tip-box">
+        <span class="tip-icon">⚠️</span>
+        <p>اگر در حین حرکت، درد تیز، درد مفصلی، تیر کشیدن به دست، سرگیجه یا بی‌حسی ایجاد شد، آن حرکت رو متوقف کن.</p>
+      </div>
+
+      <div class="info-section" style="margin-top:24px">
+        <div class="info-section-title"><span class="icon">🎯</span> شدت مناسب تمرین</div>
+        <div class="info-card">
+          <p>شدت مناسب حدود <strong>۶ تا ۷ از ۱۰</strong> باشه. در پایان هر ست باید حس کنی هنوز ۲ یا ۳ تکرار دیگه توانایی داری. تمرین تا ناتوانی کامل فعلاً لازم نیست.</p>
+        </div>
+      </div>
+
+      <div class="info-section">
+        <div class="info-section-title"><span class="icon">✅</span> قوانین طلایی</div>
+        <div class="info-card">
+          <ul>
+            <li>کیفیت حرکت از تعداد و سنگینی مهم‌تره</li>
+            <li>گردن و شانه‌ها در همه حرکات آزاد و بدون فشار باشن</li>
+            <li>تنفس در حین تمرین حبس نشه</li>
+            <li>اگر بدن خسته بود، تمرین رو سبک‌تر کن</li>
+            <li>اگر مفصلی متورم، گرم یا دردناک بود، تمرین سنگین نکن</li>
+            <li>هر حرکت با کنترل، آرامش و دقت انجام بشه</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="info-section">
+        <div class="info-section-title"><span class="icon">🚫</span> حرکاتی که باید احتیاط کرد</div>
+        <div class="info-card">
+          <ul>
+            <li>پرس سنگین بالای سر</li>
+            <li>نشر جانب سنگین</li>
+            <li>حرکات پشت گردن</li>
+            <li>کرانچ زیاد</li>
+            <li>شنای کامل روی زمین اگر فرم بدن به هم می‌ریزه</li>
+          </ul>
+          <p style="margin-top:12px">این به معنی ضعف نیست — برعکس، یعنی تمرین باهوش و حرفه‌ای!</p>
+        </div>
+      </div>
+
+      <div class="info-section">
+        <div class="info-section-title"><span class="icon">📈</span> پیشرفت در ۸ هفته</div>
+        <div class="progress-grid">
+          <div class="progress-week">
+            <div class="pw-title">هفته ۱ و ۲</div>
+            <div class="pw-desc">فقط روی یادگیری فرم حرکات تمرکز کن. شدت متوسط و کنترل‌شده.</div>
+          </div>
+          <div class="progress-week">
+            <div class="pw-title">هفته ۳ و ۴</div>
+            <div class="pw-desc">اگر بدن واکنش خوبی داشت، تعداد ست یا تکرار رو کمی بیشتر کن.</div>
+          </div>
+          <div class="progress-week">
+            <div class="pw-title">هفته ۵</div>
+            <div class="pw-desc">هفته سبک‌تر. حجم تمرین ۳۰٪ کمتر بشه تا بدن ریکاوری کنه.</div>
+          </div>
+          <div class="progress-week">
+            <div class="pw-title">هفته ۶ تا ۸</div>
+            <div class="pw-desc">پایین آوردن آهسته‌تر دمبل، ۱–۲ تکرار بیشتر، کاهش زمان استراحت.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+<!-- ===== BOTTOM NAV ===== -->
+<nav class="bottom-nav">
+  <button class="nav-item active" data-page="home">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+      <line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/>
+      <line x1="3" y1="10" x2="21" y2="10"/>
+    </svg>
+    <span>هفتگی</span>
+  </button>
+
+  <button class="nav-item" data-page="warmup">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="10"/>
+      <polyline points="12 6 12 12 16 14"/>
+    </svg>
+    <span>گرم‌کردن</span>
+  </button>
+
+  <button class="nav-item" data-page="running">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M13 4a1 1 0 1 0 2 0 1 1 0 0 0-2 0"/>
+      <path d="M7.5 14.5l2-3 3 2 2-4 3 5"/>
+      <path d="M3 20h18"/>
+    </svg>
+    <span>دویدن</span>
+  </button>
+
+  <button class="nav-item" data-page="tips">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="10"/>
+      <line x1="12" y1="8" x2="12" y2="12"/>
+      <line x1="12" y1="16" x2="12.01" y2="16"/>
+    </svg>
+    <span>نکات</span>
+  </button>
+</nav>
+
+<!-- ===== VIDEO MODAL ===== -->
+<div class="video-modal" id="video-modal">
+  <div class="video-modal-inner">
+    <button class="video-modal-close" id="modal-close">✕</button>
+    <div class="video-modal-title" id="modal-title"></div>
+    <video controls playsinline></video>
+    <div class="video-modal-placeholder" style="display:none">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+           stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="2" width="20" height="20" rx="3"/>
+        <polygon points="10 8 16 12 10 16 10 8"/>
+      </svg>
+      <span>ویدیو هنوز آپلود نشده</span>
+      <span style="font-size:0.8rem;opacity:0.6">به‌زودی اضافه می‌شود</span>
+    </div>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
